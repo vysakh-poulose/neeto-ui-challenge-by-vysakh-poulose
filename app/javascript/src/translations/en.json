@@ -1,0 +1,21 @@
+{
+  "notes": {
+    "menubar": {
+      "title": "Notes",
+      "sections": {
+        "segments": "Segments",
+        "tags": "Tags"
+      }
+    },
+    "header": {
+      "title": "All Notes",
+      "searchPlaceholder": "Search Name, Email, Phone Number, Etc...",
+      "add": "Add Note"
+    },
+    "card": {
+      "edit": "Edit",
+      "delete": "Delete",
+      "createdAt": "Created {{relativeDate}}"
+    }
+  }
+}
