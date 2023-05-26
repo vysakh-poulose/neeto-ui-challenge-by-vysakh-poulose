@@ -6,7 +6,12 @@ import { useTranslation } from "react-i18next";
 
 import { formatCreationDate } from "./utils";
 
-const Card = ({ title, description, created_at: createdAt }) => {
+const Card = ({
+  title,
+  description,
+  created_at: createdAt,
+  setIsDeleteOpen,
+}) => {
   const { fullDate, relativeDate } = formatCreationDate(createdAt);
   const { t } = useTranslation();
 
@@ -16,7 +21,12 @@ const Card = ({ title, description, created_at: createdAt }) => {
         <Typography style="h4">{title}</Typography>
         <Dropdown buttonStyle="text" icon={MenuVertical} position="bottom-end">
           <li className="cursor-pointer">{t("notes.card.edit")}</li>
-          <li className="cursor-pointer">{t("notes.card.delete")}</li>
+          <li
+            className="cursor-pointer"
+            onClick={() => setIsDeleteOpen(prev => !prev)}
+          >
+            {t("notes.card.delete")}
+          </li>
         </Dropdown>
       </div>
       <Typography className="neeto-ui-text-gray-600" style="body2">
