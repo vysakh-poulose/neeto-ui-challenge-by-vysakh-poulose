@@ -16,6 +16,13 @@
       "edit": "Edit",
       "delete": "Delete",
       "createdAt": "Created {{relativeDate}}"
+    },
+    "alert": {
+      "delete": {
+        "title": "Delete Note",
+        "message": "Are you sure you want to continue? This cannot be undone.",
+        "toasterMessage": "Successfully deleted note."
+      }
     }
   }
 }
