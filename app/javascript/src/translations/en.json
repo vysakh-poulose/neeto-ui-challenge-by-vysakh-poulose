@@ -1,20 +1,13 @@
 {
   "notes": {
     "menubar": {
-      "title": "Notes",
-      "sections": {
-        "segments": "Segments",
-        "tags": "Tags"
-      }
+      "title": "Notes"
     },
     "header": {
       "title": "All Notes",
-      "searchPlaceholder": "Search Name, Email, Phone Number, Etc...",
       "add": "Add Note"
     },
     "card": {
-      "edit": "Edit",
-      "delete": "Delete",
       "createdAt": "Created {{relativeDate}}"
     },
     "alert": {
@@ -50,17 +43,21 @@
   },
   "contacts": {
     "menubar": {
-      "title": "Contacts",
-      "sections": {
-        "segments": "Segments",
-        "tags": "Tags"
-      }
+      "title": "Contacts"
     },
     "header": {
       "title": "All Contacts",
-      "searchPlaceholder": "Search Name, Email, Phone Number, Etc...",
       "add": "Add Contact"
     },
     "owner": "Owner"
+  },
+  "common": {
+    "edit": "Edit",
+    "delete": "Delete",
+    "sections": {
+      "segments": "Segments",
+      "tags": "Tags"
+    },
+    "searchPlaceholder": "Search Name, Email, Phone Number, Etc..."
   }
 }

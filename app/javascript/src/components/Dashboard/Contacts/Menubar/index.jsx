@@ -28,7 +28,7 @@ const Menubar = ({ showMenu }) => {
         ]}
       >
         <Typography style="h5" textTransform="uppercase" weight="bold">
-          {t("contacts.menubar.sections.segments")}
+          {t("common.sections.segments")}
         </Typography>
       </NeetoMenuBar.SubTitle>
       <NeetoMenuBar.Search collapse />
@@ -46,7 +46,7 @@ const Menubar = ({ showMenu }) => {
         ]}
       >
         <Typography style="h5" textTransform="uppercase" weight="bold">
-          {t("contacts.menubar.sections.tags")}
+          {t("common.sections.tags")}
         </Typography>
       </NeetoMenuBar.SubTitle>
     </NeetoMenuBar>

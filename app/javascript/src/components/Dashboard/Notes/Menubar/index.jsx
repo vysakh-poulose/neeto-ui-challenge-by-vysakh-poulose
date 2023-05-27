@@ -33,7 +33,7 @@ const MenuBar = ({ showMenu }) => {
           textTransform="uppercase"
           weight="bold"
         >
-          {t("notes.menubar.sections.segments")}
+          {t("common.sections.segments")}
         </Typography>
       </NeetoMenuBar.SubTitle>
       {SEGMENTS.map(({ label, count }) => (
@@ -54,7 +54,7 @@ const MenuBar = ({ showMenu }) => {
         ]}
       >
         <Typography style="h5" textTransform="uppercase" weight="bold">
-          {t("notes.menubar.sections.tags")}
+          {t("common.sections.tags")}
         </Typography>
       </NeetoMenuBar.SubTitle>
       {TAGS.map(({ label, count }) => (

@@ -20,12 +20,12 @@ const Card = ({
       <div className="flex items-center justify-between">
         <Typography style="h4">{title}</Typography>
         <Dropdown buttonStyle="text" icon={MenuVertical} position="bottom-end">
-          <li className="cursor-pointer">{t("notes.card.edit")}</li>
+          <li className="cursor-pointer">{t("common.edit")}</li>
           <li
             className="cursor-pointer"
             onClick={() => setIsDeleteOpen(prev => !prev)}
           >
-            {t("notes.card.delete")}
+            {t("common.delete")}
           </li>
         </Dropdown>
       </div>
