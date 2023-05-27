@@ -23,6 +23,20 @@
         "message": "Are you sure you want to continue? This cannot be undone.",
         "toasterMessage": "Successfully deleted note."
       }
+    },
+    "pane": {
+      "title": "Add New Note"
+    },
+    "form": {
+      "title": "Title",
+      "description": "Description",
+      "assignedContact": "Assigned Contact",
+      "tags": "Tags",
+      "submit": "Save changes",
+      "cancel": "Cancel",
+      "errors": {
+        "required": "{{field}} is required"
+      }
     }
   }
 }

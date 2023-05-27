@@ -9,9 +9,9 @@ import { useTranslation } from "react-i18next";
 import notesApi from "apis/notes";
 import EmptyState from "components/commons/EmptyState";
 
+import Create from "./Create";
 import List from "./List";
 import Menubar from "./Menubar";
-import NewNotePane from "./Pane/Create";
 
 const Notes = () => {
   const { t } = useTranslation();
@@ -75,7 +75,7 @@ const Notes = () => {
             title="Looks like you don't have any notes!"
           />
         )}
-        <NewNotePane
+        <Create
           fetchNotes={fetchNotes}
           setShowPane={setShowNewNotePane}
           showPane={showNewNotePane}
