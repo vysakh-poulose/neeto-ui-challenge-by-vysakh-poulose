@@ -47,5 +47,20 @@
       "subtitle": "Add your notes to send customized emails to them.",
       "title": "Looks like you don't have any notes!"
     }
+  },
+  "contacts": {
+    "menubar": {
+      "title": "Contacts",
+      "sections": {
+        "segments": "Segments",
+        "tags": "Tags"
+      }
+    },
+    "header": {
+      "title": "All Contacts",
+      "searchPlaceholder": "Search Name, Email, Phone Number, Etc...",
+      "add": "Add Contact"
+    },
+    "owner": "Owner"
   }
 }
