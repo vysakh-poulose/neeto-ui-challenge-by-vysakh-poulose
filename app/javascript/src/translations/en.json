@@ -41,6 +41,11 @@
       "errors": {
         "required": "{{field}} is required"
       }
+    },
+    "emptyState": {
+      "primaryActionLabel": "Add new note",
+      "subtitle": "Add your notes to send customized emails to them.",
+      "title": "Looks like you don't have any notes!"
     }
   }
 }
