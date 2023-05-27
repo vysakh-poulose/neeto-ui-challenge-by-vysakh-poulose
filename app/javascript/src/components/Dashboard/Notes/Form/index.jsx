@@ -51,7 +51,7 @@ const Form = ({ onClose, refetch }) => {
               label={t("notes.form.assignedContact")}
               name="assignedContact"
               options={TAGS}
-              placeholder="Select role"
+              placeholder={t("notes.form.placeholders.assignedContact")}
             />
             <Select
               required
@@ -59,7 +59,7 @@ const Form = ({ onClose, refetch }) => {
               label={t("notes.form.tags")}
               name="tags"
               options={TAGS}
-              placeholder="Select tag"
+              placeholder={t("notes.form.placeholders.tags")}
             />
           </Pane.Body>
           <Pane.Footer>
