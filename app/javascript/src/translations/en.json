@@ -1,20 +1,13 @@
 {
   "notes": {
     "menubar": {
-      "title": "Notes",
-      "sections": {
-        "segments": "Segments",
-        "tags": "Tags"
-      }
+      "title": "Notes"
     },
     "header": {
       "title": "All Notes",
-      "searchPlaceholder": "Search Name, Email, Phone Number, Etc...",
       "add": "Add Note"
     },
     "card": {
-      "edit": "Edit",
-      "delete": "Delete",
       "createdAt": "Created {{relativeDate}}"
     },
     "alert": {
@@ -41,6 +34,30 @@
       "errors": {
         "required": "{{field}} is required"
       }
+    },
+    "emptyState": {
+      "primaryActionLabel": "Add new note",
+      "subtitle": "Add your notes to send customized emails to them.",
+      "title": "Looks like you don't have any notes!"
     }
+  },
+  "contacts": {
+    "menubar": {
+      "title": "Contacts"
+    },
+    "header": {
+      "title": "All Contacts",
+      "add": "Add Contact"
+    },
+    "owner": "Owner"
+  },
+  "common": {
+    "edit": "Edit",
+    "delete": "Delete",
+    "sections": {
+      "segments": "Segments",
+      "tags": "Tags"
+    },
+    "searchPlaceholder": "Search Name, Email, Phone Number, Etc..."
   }
 }

@@ -59,7 +59,7 @@ const Notes = () => {
             />
           }
           searchProps={{
-            placeholder: t("notes.header.searchPlaceholder"),
+            placeholder: t("common.searchPlaceholder"),
             value: searchTerm,
             onChange: e => setSearchTerm(e.target.value),
           }}
@@ -70,9 +70,9 @@ const Notes = () => {
           <EmptyState
             image={EmptyNotesListImage}
             primaryAction={() => setShowNewNotePane(true)}
-            primaryActionLabel="Add new note"
-            subtitle="Add your notes to send customized emails to them."
-            title="Looks like you don't have any notes!"
+            primaryActionLabel={t("notes.emptyState.primaryActionLabel")}
+            subtitle={t("notes.emptyState.subtitle")}
+            title={t("notes.emptyState.title")}
           />
         )}
         <Create
