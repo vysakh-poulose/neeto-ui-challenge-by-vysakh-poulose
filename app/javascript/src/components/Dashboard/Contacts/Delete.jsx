@@ -10,7 +10,7 @@ const Delete = ({ isOpen, setIsOpen }) => {
   const handleDelete = async () => {
     try {
       setIsDeleting(true);
-      Toastr.success(t("alert.delete.toasterMessage", { entity: "Note" }));
+      Toastr.success(t("alert.delete.toasterMessage", { entity: "Contact" }));
     } catch (error) {
       logger.error(error);
     } finally {
@@ -25,7 +25,7 @@ const Delete = ({ isOpen, setIsOpen }) => {
       isSubmitting={isDeleting}
       message={t("alert.delete.message")}
       size="large"
-      title={t("alert.delete.title", { entity: "Note" })}
+      title={t("alert.delete.title", { entity: "Contact" })}
       onClose={() => setIsOpen(false)}
       onSubmit={handleDelete}
     />

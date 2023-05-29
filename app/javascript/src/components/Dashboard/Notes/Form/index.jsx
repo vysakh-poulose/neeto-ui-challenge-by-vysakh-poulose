@@ -68,14 +68,15 @@ const Form = ({ onClose, refetch }) => {
               className="mr-3"
               disabled={isSubmitting}
               icon={Check}
-              label={t("notes.form.submit")}
+              label={t("button.submit")}
               loading={isSubmitting}
               style="primary"
               type="submit"
             />
             <Button
-              label={t("notes.form.cancel")}
+              label={t("button.cancel")}
               style="text"
+              type="reset"
               onClick={onClose}
             />
           </Pane.Footer>

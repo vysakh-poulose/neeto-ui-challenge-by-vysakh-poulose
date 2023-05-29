@@ -15,7 +15,7 @@ export const CONTACTS = CONTACTS_RANGE.map(contact => ({
   createdAt: "Feb, 5, 2021",
 }));
 
-export const COLUMN_HEADERS = [
+export const COLUMN_HEADERS = ({ setIsDeleteOpen }) => [
   {
     title: "Name & Role",
     dataIndex: "name",
@@ -39,7 +39,9 @@ export const COLUMN_HEADERS = [
     render: () => (
       <Dropdown buttonStyle="text" icon={MenuHorizontal}>
         <li>{t("common.edit")}</li>
-        <li>{t("common.delete")}</li>
+        <li onClick={() => setIsDeleteOpen(prev => !prev)}>
+          {t("common.delete")}
+        </li>
       </Dropdown>
     ),
   },

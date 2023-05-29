@@ -21,15 +21,13 @@ export const VALIDATION_SCHEMA = yup.object().shape({
   title: yup
     .string()
     .trim()
-    .required(t("notes.form.errors.required", { field: "Title" })),
+    .required(t("common.errors.required", { field: "Title" })),
   description: yup
     .string()
     .trim()
-    .required(t("notes.form.errors.required", { field: "Description" })),
+    .required(t("common.errors.required", { field: "Description" })),
   assignedContact: yup
     .object()
-    .required(t("notes.form.errors.required", { field: "Assigned Contact" })),
-  tags: yup
-    .object()
-    .required(t("notes.form.errors.required", { field: "Tags" })),
+    .required(t("common.errors.required", { field: "Assigned Contact" })),
+  tags: yup.object().required(t("common.errors.required", { field: "Tags" })),
 });
