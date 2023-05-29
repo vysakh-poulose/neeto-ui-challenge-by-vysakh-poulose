@@ -28,6 +28,10 @@ export const VALIDATION_SCHEMA = yup.object().shape({
     .required(t("common.errors.required", { field: "Description" })),
   assignedContact: yup
     .object()
+    .shape({
+      label: yup.string(),
+      value: yup.string(),
+    })
     .required(t("common.errors.required", { field: "Assigned Contact" })),
   tags: yup.object().required(t("common.errors.required", { field: "Tags" })),
 });

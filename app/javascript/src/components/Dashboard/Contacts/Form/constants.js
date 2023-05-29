@@ -21,7 +21,13 @@ export const VALIDATION_SCHEMA = yup.object({
     .string()
     .email(t("common.errors.invalidEmail"))
     .required(t("common.errors.required", { field: "Email" })),
-  role: yup.object().required(t("common.errors.required", { field: "Role" })),
+  role: yup
+    .object()
+    .shape({
+      label: yup.string(),
+      value: yup.string(),
+    })
+    .required(t("common.errors.required", { field: "Role" })),
 });
 
 export const ROLES = [{ label: "Owner", value: "owner" }];
