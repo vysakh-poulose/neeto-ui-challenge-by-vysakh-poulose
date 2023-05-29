@@ -14,8 +14,9 @@ const Card = ({
   created_at: createdAt,
   setIsDeleteOpen,
 }) => {
-  const { fullDate, relativeDate } = formatCreationDate(createdAt);
   const { t } = useTranslation();
+
+  const { fullDate, relativeDate } = formatCreationDate(createdAt);
 
   return (
     <div className="neeto-ui-shadow-s border p-4">

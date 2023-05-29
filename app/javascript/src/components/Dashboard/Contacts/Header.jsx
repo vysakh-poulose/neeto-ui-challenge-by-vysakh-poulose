@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 
 const Header = ({ setShowMenu, setIsCreateOpen }) => {
   const { t } = useTranslation();
+
   const [searchTerm, setSearchTerm] = useState("");
 
   return (
