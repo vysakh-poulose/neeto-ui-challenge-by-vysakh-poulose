@@ -4,12 +4,12 @@ import { Table as NeetoTable, Pagination } from "neetoui";
 
 import { COLUMN_HEADERS, CONTACTS } from "./constants";
 
-const Table = () => (
+const Table = ({ setIsDeleteOpen }) => (
   <>
     <div className="w-full">
       <NeetoTable
         className="odd:bg-gray-100"
-        columnData={COLUMN_HEADERS}
+        columnData={COLUMN_HEADERS({ setIsDeleteOpen })}
         rowData={CONTACTS}
       />
     </div>

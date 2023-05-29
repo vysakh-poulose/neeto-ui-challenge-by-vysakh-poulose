@@ -10,13 +10,6 @@
     "card": {
       "createdAt": "Created {{relativeDate}}"
     },
-    "alert": {
-      "delete": {
-        "title": "Delete Note",
-        "message": "Are you sure you want to continue? This cannot be undone.",
-        "toasterMessage": "Successfully deleted note."
-      }
-    },
     "form": {
       "title": "Title",
       "description": "Description",
@@ -78,6 +71,13 @@
   "toaster": {
     "success": {
       "create": "Successfully created {{entity}}."
+    }
+  },
+  "alert": {
+    "delete": {
+      "title": "Delete {{entity}}",
+      "message": "Are you sure you want to continue? This cannot be undone.",
+      "toasterMessage": "Successfully deleted {{entity}}."
     }
   }
 }
