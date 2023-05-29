@@ -70,8 +70,8 @@ const Form = ({ onClose }) => {
             />
             <Button
               label={t("button.cancel")}
-              size="large"
               style="text"
+              type="reset"
               onClick={onClose}
             />
           </Pane.Footer>
