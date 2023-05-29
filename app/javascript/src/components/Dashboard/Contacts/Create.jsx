@@ -5,18 +5,18 @@ import { useTranslation } from "react-i18next";
 
 import Form from "./Form";
 
-const Create = ({ showPane, setShowPane, fetchNotes }) => {
+const Create = ({ isCreateOpen, setIsCreateOpen }) => {
   const { t } = useTranslation();
-  const onClose = () => setShowPane(false);
+  const onClose = () => setIsCreateOpen(false);
 
   return (
-    <Pane isOpen={showPane} onClose={onClose}>
+    <Pane isOpen={isCreateOpen} onClose={onClose}>
       <Pane.Header>
         <Typography style="h2" weight="semibold">
-          {t("pane.title", { entity: "Note" })}
+          {t("pane.title", { entity: "Contact" })}
         </Typography>
       </Pane.Header>
-      <Form refetch={fetchNotes} onClose={onClose} />
+      <Form onClose={onClose} />
     </Pane>
   );
 };

@@ -17,22 +17,14 @@
         "toasterMessage": "Successfully deleted note."
       }
     },
-    "pane": {
-      "title": "Add New Note"
-    },
     "form": {
       "title": "Title",
       "description": "Description",
       "assignedContact": "Assigned Contact",
       "tags": "Tags",
-      "submit": "Save changes",
-      "cancel": "Cancel",
       "placeholders": {
         "assignedContact": "Select contact",
         "tags": "Select tags"
-      },
-      "errors": {
-        "required": "{{field}} is required"
       }
     },
     "emptyState": {
@@ -42,6 +34,7 @@
     }
   },
   "contacts": {
+    "owner": "Owner",
     "menubar": {
       "title": "Contacts"
     },
@@ -49,7 +42,18 @@
       "title": "All Contacts",
       "add": "Add Contact"
     },
-    "owner": "Owner"
+    "form": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "role": "Role",
+      "placeholders": {
+        "firstName": "Enter first name",
+        "lastName": "Enter last name",
+        "email": "Enter your email address",
+        "role": "Select role"
+      }
+    }
   },
   "common": {
     "edit": "Edit",
@@ -58,6 +62,22 @@
       "segments": "Segments",
       "tags": "Tags"
     },
-    "searchPlaceholder": "Search Name, Email, Phone Number, Etc..."
+    "searchPlaceholder": "Search Name, Email, Phone Number, Etc...",
+    "errors": {
+      "required": "{{field}} is required",
+      "invalidEmail": "Email is invalid"
+    }
+  },
+  "pane": {
+    "title": "Add New {{entity}}"
+  },
+  "button": {
+    "submit": "Save changes",
+    "cancel": "Cancel"
+  },
+  "toaster": {
+    "success": {
+      "create": "Successfully created {{entity}}."
+    }
   }
 }
