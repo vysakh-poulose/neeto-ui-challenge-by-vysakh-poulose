@@ -7,6 +7,7 @@ import Form from "./Form";
 
 const Create = ({ isCreateOpen, setIsCreateOpen }) => {
   const { t } = useTranslation();
+
   const onClose = () => setIsCreateOpen(false);
 
   return (

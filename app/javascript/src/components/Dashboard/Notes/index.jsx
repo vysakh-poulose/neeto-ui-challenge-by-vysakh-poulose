@@ -15,6 +15,7 @@ import Menubar from "./Menubar";
 
 const Notes = () => {
   const { t } = useTranslation();
+
   const [loading, setLoading] = useState(true);
   const [showNewNotePane, setShowNewNotePane] = useState(false);
   const [showMenu, setShowMenu] = useState(true);

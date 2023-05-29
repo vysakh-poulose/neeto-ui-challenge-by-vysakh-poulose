@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 
 const Delete = ({ isOpen, setIsOpen }) => {
   const { t } = useTranslation();
+
   const [isDeleting, setIsDeleting] = useState(false);
 
   const handleDelete = async () => {

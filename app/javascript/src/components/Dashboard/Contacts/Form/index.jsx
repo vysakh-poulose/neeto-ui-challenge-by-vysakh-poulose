@@ -10,6 +10,7 @@ import { INITIAL_FORM_VALUES, ROLES, VALIDATION_SCHEMA } from "./constants";
 
 const Form = ({ onClose }) => {
   const { t } = useTranslation();
+
   const handleSubmit = async () => {
     try {
       Toastr.success(t("toaster.success.create", { entity: "Contact" }));
@@ -70,8 +71,8 @@ const Form = ({ onClose }) => {
             />
             <Button
               label={t("button.cancel")}
-              size="large"
               style="text"
+              type="reset"
               onClick={onClose}
             />
           </Pane.Footer>

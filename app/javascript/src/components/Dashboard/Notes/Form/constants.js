@@ -13,8 +13,8 @@ export const TAGS = [
 export const INITIAL_FORM_VALUES = {
   title: "",
   description: "",
-  assignedContact: "",
-  tags: "",
+  assignedContact: null,
+  tags: null,
 };
 
 export const VALIDATION_SCHEMA = yup.object().shape({
@@ -28,6 +28,18 @@ export const VALIDATION_SCHEMA = yup.object().shape({
     .required(t("common.errors.required", { field: "Description" })),
   assignedContact: yup
     .object()
+    .nullable()
+    .shape({
+      label: yup.string(),
+      value: yup.string(),
+    })
     .required(t("common.errors.required", { field: "Assigned Contact" })),
-  tags: yup.object().required(t("common.errors.required", { field: "Tags" })),
+  tags: yup
+    .object()
+    .nullable()
+    .shape({
+      label: yup.string(),
+      value: yup.string(),
+    })
+    .required(t("common.errors.required", { field: "Tags" })),
 });
