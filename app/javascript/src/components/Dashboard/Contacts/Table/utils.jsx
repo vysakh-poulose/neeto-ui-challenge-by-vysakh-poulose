@@ -6,10 +6,16 @@ import { t } from "i18next";
 
 import Profile from "./Profile";
 
+const { Menu, MenuItem } = Dropdown;
+
 const renderOptions = ({ setIsDeleteOpen }) => (
   <Dropdown buttonStyle="text" icon={MenuHorizontal}>
-    <li>{t("common.edit")}</li>
-    <li onClick={() => setIsDeleteOpen(prev => !prev)}>{t("common.delete")}</li>
+    <Menu>
+      <MenuItem.Button>{t("common.edit")}</MenuItem.Button>
+      <MenuItem.Button onClick={() => setIsDeleteOpen(prev => !prev)}>
+        {t("common.delete")}
+      </MenuItem.Button>
+    </Menu>
   </Dropdown>
 );
 

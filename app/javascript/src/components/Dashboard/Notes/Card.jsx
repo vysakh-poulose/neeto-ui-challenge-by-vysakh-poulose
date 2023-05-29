@@ -6,6 +6,8 @@ import { useTranslation } from "react-i18next";
 
 import { formatCreationDate } from "./utils";
 
+const { Menu, MenuItem } = Dropdown;
+
 const Card = ({
   title,
   description,
@@ -20,13 +22,12 @@ const Card = ({
       <div className="flex items-center justify-between">
         <Typography style="h4">{title}</Typography>
         <Dropdown buttonStyle="text" icon={MenuVertical} position="bottom-end">
-          <li className="cursor-pointer">{t("common.edit")}</li>
-          <li
-            className="cursor-pointer"
-            onClick={() => setIsDeleteOpen(prev => !prev)}
-          >
-            {t("common.delete")}
-          </li>
+          <Menu>
+            <MenuItem.Button>{t("common.edit")}</MenuItem.Button>
+            <MenuItem.Button onClick={() => setIsDeleteOpen(prev => !prev)}>
+              {t("common.delete")}
+            </MenuItem.Button>
+          </Menu>
         </Dropdown>
       </div>
       <Typography className="neeto-ui-text-gray-600" style="body2">
