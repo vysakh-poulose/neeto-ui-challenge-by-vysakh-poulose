@@ -17,7 +17,7 @@ const Notes = () => {
   const { t } = useTranslation();
 
   const [loading, setLoading] = useState(true);
-  const [showNewNotePane, setShowNewNotePane] = useState(false);
+  const [isNewPaneOpen, setIsNewPaneOpen] = useState(false);
   const [showMenu, setShowMenu] = useState(true);
   const [searchTerm, setSearchTerm] = useState("");
   const [notes, setNotes] = useState([]);
@@ -56,13 +56,13 @@ const Notes = () => {
               icon={Plus}
               label={t("notes.header.add")}
               size="small"
-              onClick={() => setShowNewNotePane(true)}
+              onClick={() => setIsNewPaneOpen(true)}
             />
           }
           searchProps={{
             placeholder: t("common.searchPlaceholder"),
             value: searchTerm,
-            onChange: e => setSearchTerm(e.target.value),
+            onChange: event => setSearchTerm(event.target.value),
           }}
         />
         {notes.length ? (
@@ -70,7 +70,7 @@ const Notes = () => {
         ) : (
           <EmptyState
             image={EmptyNotesListImage}
-            primaryAction={() => setShowNewNotePane(true)}
+            primaryAction={() => setIsNewPaneOpen(true)}
             primaryActionLabel={t("notes.emptyState.primaryActionLabel")}
             subtitle={t("notes.emptyState.subtitle")}
             title={t("notes.emptyState.title")}
@@ -78,8 +78,8 @@ const Notes = () => {
         )}
         <Create
           fetchNotes={fetchNotes}
-          setShowPane={setShowNewNotePane}
-          showPane={showNewNotePane}
+          setShowPane={setIsNewPaneOpen}
+          showPane={isNewPaneOpen}
         />
       </Container>
     </>

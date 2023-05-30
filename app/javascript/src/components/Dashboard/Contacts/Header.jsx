@@ -25,7 +25,7 @@ const Header = ({ setShowMenu, setIsCreateOpen }) => {
       searchProps={{
         placeholder: t("common.searchPlaceholder"),
         value: searchTerm,
-        onChange: e => setSearchTerm(e.target.value),
+        onChange: event => setSearchTerm(event.target.value),
       }}
     />
   );
