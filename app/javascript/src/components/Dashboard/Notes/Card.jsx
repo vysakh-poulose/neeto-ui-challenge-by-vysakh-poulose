@@ -6,6 +6,8 @@ import { useTranslation } from "react-i18next";
 
 import { formatCreationDate } from "./utils";
 
+import { AVATAR_URL } from "../constants";
+
 const { Menu, MenuItem } = Dropdown;
 
 const Card = ({
@@ -43,10 +45,7 @@ const Card = ({
               {t("notes.card.createdAt", { relativeDate })}
             </Typography>
           </Tooltip>
-          <Avatar
-            size="small"
-            user={{ imageUrl: "https://i.pravatar.cc/300" }}
-          />
+          <Avatar size="small" user={{ imageUrl: AVATAR_URL }} />
         </div>
       </div>
     </div>
